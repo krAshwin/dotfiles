@@ -34,3 +34,9 @@ lamp_stack_restart() {
 }
 
 alias apache_log="tail /var/log/apache2/error.log"
+
+# NASM + LD  -  run assembly programs x86 arch
+nasmld() {
+    nasm -f elf "$1.asm"
+    ld -m elf_i386 -o "exec_$1" "$1.o"
+}
