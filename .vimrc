@@ -1,4 +1,8 @@
 " Vundle
+" Installation
+" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" vim +PluginInstall +qall
+
 filetype off
 
 let g:vundle_default_git_proto = 'git'
